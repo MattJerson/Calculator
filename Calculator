@@ -1,0 +1,33 @@
+package test;
+import java.util.Scanner;
+public class Test {
+public static void main(String[] args) {
+Scanner X = new Scanner(System.in);
+double X1;
+double X2;
+double Ans;
+char Op;
+System.out.println("======================");
+System.out.println("Enter Any Numbers");
+X1 = X.nextDouble();
+X2 = X.nextDouble();
+System.out.println("Enter An Operator");
+System.out.println("(+, -, *, /)");
+Op = X.next().charAt(0);
+switch (Op){
+case '+': Ans =  X1 + X2;   
+break;
+case '-': Ans = X1 - X2;
+break;
+case '*': Ans = X1 * X2;
+break;
+case '/': Ans = X1 / X2;
+break;
+default: System.out.printf("Error! Enter Correct Operator");
+return;
+}
+System.out.println("The Result Is Given As Follows:");
+System.out.println(X1 + " " + Op + " " + X2 + " = " + Ans);
+System.out.println("======================");
+}
+}
